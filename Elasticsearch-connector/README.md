@@ -26,5 +26,5 @@ https://docs.couchbase.com/elasticsearch-connector/4.0/index.html
    make push
 
 # Run Docker
-SET ENV in dockerfile first.
-docker run -d -p 9200:9200 -p 9300:9300 -p 9091:9091 your-docker-registryelasticsearch:couchbase-elastic-6.4.1
+SET ENV in dockerfile first. You can use -e option.
+`docker run -d -p 9200:9200 -p 9300:9300 -p 9091:9091 misko566/elasticsearch:couchbase-elastic-6.4.1`
