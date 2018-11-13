@@ -1,0 +1,18 @@
+#path:
+#  data: /data/data
+#  logs: /data/log
+#  plugins: /elasticsearch/plugins
+#  work: /data/work
+#couchbase.username: admin
+#couchbase.password: password
+#couchbase.maxConcurrentRequests: 1024
+#couchbase.keyFilter: org.elasticsearch.transport.couchbase.capi.RegexKeyFilter
+#couchbase.keyFilter.type: exclude
+#couchbase.keyFilter.keyFiltersRegex.archive: ^archive_.*$
+#couchbase.keyFilter.keyFiltersRegex.version: ^version_.*$
+
+
+network.host: 0.0.0.0
+
+couchbase.username: "admin"
+couchbase.password: "password"
