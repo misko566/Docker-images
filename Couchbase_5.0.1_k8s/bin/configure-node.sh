@@ -1,4 +1,4 @@
-# Author: ,micha.smolik@devopsgroup.sk
+# Author: ,michal.smolik@devopsgroup.sk
 # Inspired by Arun Gupta: https://github.com/arun-gupta/couchbase-kubernetes/blob/master/cluster-statefulset/configure-node.sh
 
 set -m
@@ -14,8 +14,8 @@ set -m
 [ "$MEMORY_QUOTA" == "" ] && MEMORY_QUOTA=300
 [ "$INDEX_QUOTA" == "" ] && INDEX_QUOTA=300
 [ "$AUTO_REBALANCE" == "" ] && AUTO_REBALANCE=false
-[ "$COUCHBASE_MASTER" == "" ] && COUCHBASE_MASTER=couchbase-cluster-b-0.couchbase-cluster-b.qa.svc.cluster.local
-[ "$SERVICE_FQDN" == "" ] && SERVICE_FQDN=couchbase-cluster-b.qa.svc.cluster.local
+[ "$COUCHBASE_MASTER" == "" ] && COUCHBASE_MASTER=couchbase-cluster-b-0.couchbase-cluster-b.namespace1.svc.cluster.local
+[ "$SERVICE_FQDN" == "" ] && SERVICE_FQDN=couchbase-cluster-b.namespace1.svc.cluster.local
 [ "$WAIT_FOR_SERVICE" == "" ] && WAIT_FOR_SERVICE=60
 
 echo "Environment:"
